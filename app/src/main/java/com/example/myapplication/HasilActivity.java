@@ -1,11 +1,11 @@
 package com.example.myapplication;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class HasilActivity extends AppCompatActivity {
 
@@ -17,13 +17,12 @@ public class HasilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hasilactivity);
-        tvHasil = (TextView) findViewById(R.id.tvHasil);
-        tvSaran = (TextView) findViewById(R.id.tvSaran);
+        tvHasil = findViewById(R.id.tvHasil);
+        tvSaran = findViewById(R.id.tvSaran);
         Intent intent = getIntent();
         totalya = intent.getIntExtra("totalya",0);
         totaltidak = intent.getIntExtra("totaltidak",0);
         persentase = (totalya * 100 / 12);
-
 
         tvHasil.setText(persentase+"%");
 
@@ -38,7 +37,7 @@ public class HasilActivity extends AppCompatActivity {
         findViewById(R.id.btnUlang).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HasilActivity.this,identifikasimenu.class);
+                Intent intent = new Intent(HasilActivity.this, IdentifikasiMenu.class);
 
                 startActivity(intent);
                 finish();
