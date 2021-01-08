@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".identifikasimenu">
+    tools:context=".IdentifikasiMenu">
 
     <LinearLayout
-        android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/txtSoal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Apakah anda demam tinggi ?"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,23 +18,32 @@
 
             <Button
                 android:id="@+id/btnYa"
-                android:layout_margin="40dp"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:layout_weight="1"
                 android:background="#03A9F4"
-                android:textColor="#fdf9f9"
-                android:text="YA"/>
+                android:text="YA"
+                android:textColor="#fdf9f9" />
 
             <Button
                 android:id="@+id/btnTidak"
-                android:layout_margin="40dp"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:layout_weight="1"
                 android:background="#03A9F4"
-                android:textColor="#fdf9f9"
-                android:text="TIDAK"/>
+                android:text="TIDAK"
+                android:textColor="#fdf9f9" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Apakah anda demam tinggi ?"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
     </LinearLayout>
 </RelativeLayout>

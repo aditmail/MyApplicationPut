@@ -1,11 +1,10 @@
 package com.example.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
-import android.media.Image;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.ImageView;
 
@@ -16,19 +15,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView IVmenusehat=(ImageView)findViewById(R.id.IVmenusehat);
+        ImageView IVmenusehat = findViewById(R.id.IVmenusehat);
         IVmenusehat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i =new Intent(MainActivity.this,makanansehat.class);
+                Intent i = new Intent(MainActivity.this, MakanSehat.class);
                 startActivity(i);
             }
         });
-        ImageView IVmenuiden=(ImageView)findViewById(R.id.IVmenuiden);
+        ImageView IVmenuiden = findViewById(R.id.IVmenuiden);
         IVmenuiden.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,identifikasimenu.class);
+                Intent i = new Intent(MainActivity.this, IdentifikasiMenu.class);
                 startActivity(i);
             }
         });
