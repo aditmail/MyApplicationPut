@@ -1,9 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
-
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,18 +27,18 @@ public class IdentifikasiMenu extends AppCompatActivity {
         // final Integer[] hitungYa = new Integer[1];
 
         //hitungYa[0] = 0;
-        soal.add("Apakah anda demam tinggi ?");
-        soal.add("Apakah anda merasakan pusing ?");
-        soal.add("Apakah anda kehilangan nafsu makan?");
-        soal.add("Apakah anda merasakan mual ?");
-        soal.add("Apakah nyeri otot dan tulang ?");
-        soal.add("Apakah nyeri sendi? ");
-        soal.add("Apakah sakit perut yang parah? ");
-        soal.add("Apakah anda muntah terus-menerus? ");
-        soal.add("Apakah muntah darah ? ");
-        soal.add("Apakah anda mimisan ? ");
-        soal.add("Apakah sulit bernafas? ");
-        soal.add("Apakah timbul bintik-bintik merah pada badan? ");
+        soal.add("Apakah ering merasa haus?");
+        soal.add("Apakah sering buang air kecil, terutama di malam hari?");
+        soal.add("Apakah Anda sering merasa sangat lapar?");
+        soal.add("Apakah berat badan turun drastis?");
+        soal.add("Apakah nyeri otot dan tulang?");
+        soal.add("Apakah merasa lemas? ");
+        soal.add("Apakah pandangan kabur? ");
+        soal.add("Apakah ada luka yang sulit sembuh? ");
+        soal.add("Apakah mulut merasa sering kering ? ");
+        soal.add("Apakah mudah tersinggung? ");
+        soal.add("Apakah sering kesemutan? ");
+        soal.add("Apakah sering merasa gatal-gatal karena infeksi jamur? ");
 
         tvSoal = findViewById(R.id.txtSoal);
         btnYa = findViewById(R.id.btnYa);

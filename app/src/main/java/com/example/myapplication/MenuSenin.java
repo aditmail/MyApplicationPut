@@ -1,8 +1,9 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import androidx.appcompat.app.AppCompatActivity;
+
 
 /**
  * Created by Asep Mohamad Noor on 5/12/2018.
